@@ -1,0 +1,139 @@
+1  sayHi(){ echo "hi"; }
+    
+2  sayHi
+    
+3  mkdir project
+    
+4  cd project
+    
+5  pwd
+    
+6  ls -a
+    
+7  touch .fileOne .fileTwo
+    
+8  ls -a
+    
+9  rm .fileTwo
+   
+10  ls -a
+   
+11  rem .fileOne
+   
+12  rm .fileOne
+   
+13  ls -a
+   
+14  gitinit
+   
+15  git init
+   
+16  ls -a
+  
+17  ls -al
+   
+18  echo "you now see a .git folder"
+   
+19  git status
+   
+20  touch names.txt
+   
+21  ls -al
+   
+22  got status
+   
+23  git status
+   
+24  git add names.txt
+   
+25  git status
+   
+26  git commit -m "initial commit
+
+names.txt has been added to git"
+   
+27  git log
+   
+28  git status
+   
+29  vi names.txt 
+   
+30  vi names.txt 
+   
+31  cat names.txt 
+   
+32  git status
+   
+33  git add names.txt 
+   
+34  git status
+   
+35  git commit -m "items added to names.txt"
+   
+36  git status
+   
+37  git log
+   
+38  vi names.txt 
+   
+39  cat names.txt 
+   
+40  git status
+   
+41  git add names.txt 
+   
+42  git commit -m "Add more items to names.txt"
+   
+43  git status
+   
+44  git log
+   
+45  touch password
+   
+46  rm password 
+   
+47  vi password.txt
+  
+48  git status
+   
+49  vi names.txt 
+   
+50  git status
+   
+51  vi .gitignore
+   
+52  git status
+   
+53  git add .gitignore 
+   
+54  git add names.txt 
+   
+55  git status
+   
+56  git commit -m "One item added to names.txt
+
+Added .gitignore file
+
+"
+   
+57  git log
+   
+58  git status
+   
+59  git log --oneline
+   
+60  git checkout 864ff35
+   
+61  cat names.txt 
+   
+62  git checkout 6c1c9c6
+   
+63  cat names.txt 
+   
+64  cd..
+   
+65  cd ..
+   
+66  history
+   
+67  history > history.txt
