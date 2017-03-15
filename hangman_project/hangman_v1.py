@@ -1,8 +1,13 @@
 import random
 words = ['cheese', 'egg', 'milk']
+check = []
+show = []
+count = 0
 
 word = random.choice(words)
-print(len(word)*'_ ')
+word = str(word)
 
-check = word.split()
-print(check)
+for i in word:
+    check.append(i)
+    show.append('_')
+print(' '.join(show))
