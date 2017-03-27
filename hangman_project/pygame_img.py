@@ -3,6 +3,7 @@ import pygame, sys
 pygame.init()
 screen = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("Hangman!")
+hangman = pygame.image.load('hangman_test.png')
 done = False
 
 while not done:
@@ -10,7 +11,5 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
 
-    myfont = pygame.font.SysFont("Arial", 40)
-    label = myfont.render("Some Text!", 1, (255,255,255))
-    screen.blit(label, (100, 100))
+    screen.blit(hangman, (50, 50))
     pygame.display.update()
