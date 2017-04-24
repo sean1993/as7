@@ -1,0 +1,4 @@
+single,sport,table,tennis,
+uncle,until,village,voice
+warm,window,xerox,xylophone
+yard,young,zero,zoo

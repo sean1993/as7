@@ -2,12 +2,3 @@ about,anything,between,branch,
 careful,common,dance,depend,
 eight,escape,false,freedom,
 garden,ground,hammer,hungry,
-idea,inside,jelly,juice,
-keep,knock,ladder,length,
-machine,morning,narrow,nearly,
-object,orange,paint,pretty,
-queen,quick,radio,record,
-single,sport,table,tennis,
-uncle,until,village,voice
-warm,window,xerox,xylophone
-yard,young,zero,zoo

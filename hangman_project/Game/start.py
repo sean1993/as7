@@ -3,6 +3,6 @@ import pygame
 
 pygame.init()
 
-screen = pygame.display.set_mode((480, 640))
+screen = pygame.display.set_mode((500, 700))
 
 start_menu(screen)
