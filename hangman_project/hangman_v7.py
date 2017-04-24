@@ -17,8 +17,10 @@ while not done:
         for char in word:
             if char in guessed:
                 label = myfont.render(char, 1, (255,255,255))
+                screen.blit(label, (100, 100))
             else:
                 label = myfont.render("_", 1, (255,255,255))
+                screen.blit(label, (100, 100))
                 failed += 1
         if failed == 0:
             print("\nCorrect!")
@@ -47,3 +49,4 @@ while not done:
                 print("\nGAME OVER!!")
                 break
         print("Letters already guessed: " + '-'.join(sorted(guessed)))
+        pygame.display.update()
