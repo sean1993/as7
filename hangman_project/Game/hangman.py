@@ -68,15 +68,38 @@ def choose_difficulty(screen):
 
 def choose_word():
     words = []
-    with open("data/easy.txt", "r") as f:
-        for line in f:
-            line = filter(None, line.strip().split(","))
-            for word in line:
-                words.append(word)
-    word = random.choice(words)
-    for i in word:
-        secret_word.append(i)
-        shown_letters.append('_')
+    if level == 1:
+        with open("data/easy.txt", "r") as f:
+            for line in f:
+                line = filter(None, line.strip().split(","))
+                for word in line:
+                    words.append(word)
+        word = random.choice(words)
+        for i in word:
+            secret_word.append(i)
+            shown_letters.append('_')
+
+    if level == 2:
+        with open("data/normal.txt", "r") as f:
+            for line in f:
+                line = filter(None, line.strip().split(","))
+                for word in line:
+                    words.append(word)
+        word = random.choice(words)
+        for i in word:
+            secret_word.append(i)
+            shown_letters.append('_')
+
+    if level == 3:
+        with open("data/hard.txt", "r") as f:
+            for line in f:
+                line = filter(None, line.strip().split(","))
+                for word in line:
+                    words.append(word)
+        word = random.choice(words)
+        for i in word:
+            secret_word.append(i)
+            shown_letters.append('_')
     return secret_word, shown_letters
 
 def update(letter):
@@ -100,7 +123,7 @@ def hangman(screen):
         screen.fill((255, 255, 255))
         screen.blit(font.render("Word: " + ' '.join(shown_letters), True, (0, 0, 0)), (50, 500))
         screen.blit(font.render("Already Guessed: " + ','.join(sorted(guessed)), True, (0, 0, 0)), (50, 550))
-        screen.blit(font.render(str(incorrect_guesses) + "/6", True, (0, 0, 0)), (50, 600))
+        screen.blit(font.render("Incorrect: " + str(incorrect_guesses) + "/6", True, (0, 0, 0)), (50, 600))
         screen.blit(pygame.image.load(os.path.join("data/hangman_0.png")), (0, 0))
         if incorrect_guesses > 0:
             screen.blit(pygame.image.load(os.path.join("data/hangman_" + str(incorrect_guesses) + ".png")), (0, 0))
